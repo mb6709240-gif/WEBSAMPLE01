@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Attendance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Company Attendance Dashboard</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Form -->
+        <form id="attendanceForm">
+            <input type="text" id="empId" placeholder="Employee ID" required>
+            <input type="text" id="empName" placeholder="Employee Name" required>
+            <input type="text" id="dept" placeholder="Department" required>
+            <input type="number" id="workingDays" placeholder="Working Days" required>
+            <input type="number" id="presentDays" placeholder="Present Days" required>
+            <input type="number" id="leaveDays" placeholder="Leave Days" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Attendance %</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
